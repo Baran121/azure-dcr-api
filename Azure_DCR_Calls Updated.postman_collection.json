@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "c619990e-f457-4634-84d3-6dd857fe02c7",
+		"name": "azure_ad_auto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://graph.microsoft.com/v1.0/applications",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6IjE2Z2RDTENBZlU0UExhNGdnNG1IcGNudHc1Ykx0dXpSMHpsTXgzRVRmNDgiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWF0IjoxNjM2NTE2MzcxLCJuYmYiOjE2MzY1MTYzNzEsImV4cCI6MTYzNjUyMDI3MSwiYWlvIjoiRTJaZ1lNaEtFRDEyU3JKOWYzdkV2RVVpVzZ3TUFBPT0iLCJhcHBfZGlzcGxheW5hbWUiOiJhcHAxIiwiYXBwaWQiOiI5ZTRiMDVlMS1kMDg5LTQ2OWMtODNiZC1kZjA2MDRhMzUzZDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJmZTRkMmIzZi04YTQzLTRlNmUtOGVhZS04Mjc1NWViNjk2NGIiLCJyaCI6IjAuQVF3QXNheURvS2FyTEVlSEFkajZKem5fUU9FRlM1NkowSnhHZzczZkJnU2pVOUFNQUFBLiIsInJvbGVzIjpbIkFwcGxpY2F0aW9uLlJlYWRXcml0ZS5Pd25lZEJ5IiwiQXBwbGljYXRpb24uUmVhZFdyaXRlLkFsbCIsIkRpcmVjdG9yeS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImZlNGQyYjNmLThhNDMtNGU2ZS04ZWFlLTgyNzU1ZWI2OTY0YiIsInRlbmFudF9yZWdpb25fc2NvcGUiOiJFVSIsInRpZCI6ImEwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MCIsInV0aSI6Ikt3b0lTaGdLemtpYzJfTXNSOHdFQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjA5OTdhMWQwLTBkMWQtNGFjYi1iNDA4LWQ1Y2E3MzEyMWU5MCJdLCJ4bXNfdGNkdCI6MTQwODEzMjgwOH0.VM9gKZ-gfl7_LYdsM1CMuDL_tEHelUSAOA6FCo_ip-pJtXR1PsQvQbPZJIOwOKW0IjwB06HnuNz3-2LSwhCDbV4gzGvFzAua6-NO5EWHcH5-hcJdlKaQDGYPu-5iUl0U5ncYCOg1z5YuPfk6aEgob6erS3J6AQl6RcuvzDdcY5DmTedgf0Be9no7wUwrbAWt6Jgy_h22guM8HF4Fv-5gN1K8cGfqTxMjsllTDBUSK1MGN9olxTk164itEmBO5wzrQi4NqcEAJZrZ6WLAraDQFGWaT7fiHLduVYC17AmbsW36JiaE9GHAEH9i1jDTvaKGH6NvNFPFFEZbAuaNWQbDXQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJhcGk6Ly85ZTRiMDVlMS1kMDg5LTQ2OWMtODNiZC1kZjA2MDRhMzUzZDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWF0IjoxNjM0NTc5NjgwLCJuYmYiOjE2MzQ1Nzk2ODAsImV4cCI6MTYzNDU4MzU4MCwiYWlvIjoiRTJaZ1lBaVdYbmZUOWFBRjY1WHZ2MjlNM1RVbEJnQT0iLCJhcHBpZCI6IjllNGIwNWUxLWQwODktNDY5Yy04M2JkLWRmMDYwNGEzNTNkMCIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2EwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MC8iLCJvaWQiOiJmZTRkMmIzZi04YTQzLTRlNmUtOGVhZS04Mjc1NWViNjk2NGIiLCJyaCI6IjAuQVF3QXNheURvS2FyTEVlSEFkajZKem5fUU9FRlM1NkowSnhHZzczZkJnU2pVOUFNQUFBLiIsInN1YiI6ImZlNGQyYjNmLThhNDMtNGU2ZS04ZWFlLTgyNzU1ZWI2OTY0YiIsInRpZCI6ImEwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MCIsInV0aSI6Inl2NTRjcVdpYVVxN3NINFQ3Y0s0QUEiLCJ2ZXIiOiIxLjAifQ.eq79Dp_yqaQ8Cr726_k2zPveP2njBVApL50ZddIZUv6ry9EXuQIzw4yPs-7qzEqdpTefz7SprhMkWiLuxRfWCBaVD5H5vsy2DAe4klh2g_G5wzJgDlxvuT_DpoZNicX_42oLvevQL83jp1l2i-wAfJUpmLv1z_FTqFfxwa8CGonKxkx2uRdi_BuHWFMg4ST5puQAZKINTGAXbuR0kuOLZ4OWfxR_8MKzkANU7dMfSgAbzAM0qwhRGZMfmJSCXkR-mos4sKjIR2Xl9v0juva7zwYTOEwv6dcChRvcQRvNMyDfCKeXkjFA9Ieay9habLtRpBBgHIWYciNLp_8MpC4Tpg",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "scope",
+						"value": "api://9e4b05e1-d089-469c-83bd-df0604a353d0/.default",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"displayName\": \"regular176\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/applications",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"applications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://login.microsoftonline.com/a083acb1-aba6-472c-8701-d8fa2739ff40/oauth2/v2.0/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Prefer",
+						"value": "outlook.body-content-type=text",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scope",
+							"value": "https://graph.microsoft.com/.default",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "TEI7Q~nd8vlXSJWn2yPkl98MASelq0SRzaToZ",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "9e4b05e1-d089-469c-83bd-df0604a353d0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/a083acb1-aba6-472c-8701-d8fa2739ff40/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"a083acb1-aba6-472c-8701-d8fa2739ff40",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPassword",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6ImdRZzBhbUUxZnhqZFE2ZUMxS2MxdjVuZ1dzb1dFRTNCVkRsbzNmcUpWcmciLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWF0IjoxNjM0NTgxNjgwLCJuYmYiOjE2MzQ1ODE2ODAsImV4cCI6MTYzNDU4NTU4MCwiYWlvIjoiRTJaZ1lIZ2NQcHMvNGZpbFN3S3lDVnMrVDdnZkN3QT0iLCJhcHBfZGlzcGxheW5hbWUiOiJhcHAxIiwiYXBwaWQiOiI5ZTRiMDVlMS1kMDg5LTQ2OWMtODNiZC1kZjA2MDRhMzUzZDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJmZTRkMmIzZi04YTQzLTRlNmUtOGVhZS04Mjc1NWViNjk2NGIiLCJyaCI6IjAuQVF3QXNheURvS2FyTEVlSEFkajZKem5fUU9FRlM1NkowSnhHZzczZkJnU2pVOUFNQUFBLiIsInJvbGVzIjpbIkFwcGxpY2F0aW9uLlJlYWRXcml0ZS5Pd25lZEJ5IiwiQXBwbGljYXRpb24uUmVhZFdyaXRlLkFsbCIsIkRpcmVjdG9yeS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImZlNGQyYjNmLThhNDMtNGU2ZS04ZWFlLTgyNzU1ZWI2OTY0YiIsInRlbmFudF9yZWdpb25fc2NvcGUiOiJFVSIsInRpZCI6ImEwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MCIsInV0aSI6IlN3ajFkSENmNDAtcVpfWG9fQlN5QUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjA5OTdhMWQwLTBkMWQtNGFjYi1iNDA4LWQ1Y2E3MzEyMWU5MCJdLCJ4bXNfdGNkdCI6MTQwODEzMjgwOH0.pgRyf_nA5cymmOAKaMsmg3TYZiVksT8REC9rJDsCf7B4qyYpExeZ1DdL85eMQvAxV0CUBT8r8RnUnA58A02DjYFRovMss-CWGyY9Ri2bz1NxyQQ1svgIjIQVKNMAUULGbdjg-5viUaom4Gl1kJHAHYto6myx66YzMvvzg289uP0DhHfUzxqs4vBVVcnxnQyfQ4aHlIwDjWf8BzUlKnWLXtf_Z-rdY8ZmpS9WLlnK-iLeZ2G0QPARJR_a12Fd3JTvPEYSJUAfgTUXtvCR0Me96DzenFDHljXcPt_h9Q22YfS60v3asn3YBtyO9aduLqGeo7u2N2fzvSCEaqr1bmnfWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJhcGk6Ly85ZTRiMDVlMS1kMDg5LTQ2OWMtODNiZC1kZjA2MDRhMzUzZDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWF0IjoxNjM0NTc5NjgwLCJuYmYiOjE2MzQ1Nzk2ODAsImV4cCI6MTYzNDU4MzU4MCwiYWlvIjoiRTJaZ1lBaVdYbmZUOWFBRjY1WHZ2MjlNM1RVbEJnQT0iLCJhcHBpZCI6IjllNGIwNWUxLWQwODktNDY5Yy04M2JkLWRmMDYwNGEzNTNkMCIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2EwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MC8iLCJvaWQiOiJmZTRkMmIzZi04YTQzLTRlNmUtOGVhZS04Mjc1NWViNjk2NGIiLCJyaCI6IjAuQVF3QXNheURvS2FyTEVlSEFkajZKem5fUU9FRlM1NkowSnhHZzczZkJnU2pVOUFNQUFBLiIsInN1YiI6ImZlNGQyYjNmLThhNDMtNGU2ZS04ZWFlLTgyNzU1ZWI2OTY0YiIsInRpZCI6ImEwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MCIsInV0aSI6Inl2NTRjcVdpYVVxN3NINFQ3Y0s0QUEiLCJ2ZXIiOiIxLjAifQ.eq79Dp_yqaQ8Cr726_k2zPveP2njBVApL50ZddIZUv6ry9EXuQIzw4yPs-7qzEqdpTefz7SprhMkWiLuxRfWCBaVD5H5vsy2DAe4klh2g_G5wzJgDlxvuT_DpoZNicX_42oLvevQL83jp1l2i-wAfJUpmLv1z_FTqFfxwa8CGonKxkx2uRdi_BuHWFMg4ST5puQAZKINTGAXbuR0kuOLZ4OWfxR_8MKzkANU7dMfSgAbzAM0qwhRGZMfmJSCXkR-mos4sKjIR2Xl9v0juva7zwYTOEwv6dcChRvcQRvNMyDfCKeXkjFA9Ieay9habLtRpBBgHIWYciNLp_8MpC4Tpg",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "scope",
+						"value": "api://9e4b05e1-d089-469c-83bd-df0604a353d0/.default",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"passwordCredential\": {\r\n    \"displayName\": \"Password friendly name\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/applications/29ab0441-0d85-48c7-aecc-b9fe6ebc4262/addPassword",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"applications",
+						"29ab0441-0d85-48c7-aecc-b9fe6ebc4262",
+						"addPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actual-api",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJhcGk6Ly9yZWd1bGFyMTc0IiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvYTA4M2FjYjEtYWJhNi00NzJjLTg3MDEtZDhmYTI3MzlmZjQwLyIsImlhdCI6MTYzNjQ3NTM4OSwibmJmIjoxNjM2NDc1Mzg5LCJleHAiOjE2MzY0NzkyODksImFpbyI6IkUyWmdZSGgvWEo1ckkrZWxyWGZtQ2o2Tllyek5Cd0E9IiwiYXBwaWQiOiI1MmY2YjYzOC0xYzk3LTQ0YTYtYTIxNy0xMDA0ZmYwZmQ5MDciLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwib2lkIjoiYTM0MTZiMWMtODAzOS00OGZkLTlkZWMtNjAxN2M3ZDZhNzE0IiwicmgiOiIwLkFRd0FzYXlEb0thckxFZUhBZGo2SnpuX1FEaTI5bEtYSEtaRW9oY1FCUDhQMlFjTUFBQS4iLCJzdWIiOiJhMzQxNmIxYy04MDM5LTQ4ZmQtOWRlYy02MDE3YzdkNmE3MTQiLCJ0aWQiOiJhMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAiLCJ1dGkiOiJLY0NZVW1ZZ05VcWR4cEZKbk1lYkFBIiwidmVyIjoiMS4wIn0.kGEYAWyq0-LPnwCEXgu8F5EDVQM8w0ZXnz3V9rveNT6A8nnGs8oIRu2BhlnfbuqCZXUxvqec9IRx9PaPFXUOPQtNUPvaDLY4GMKL8VsDnWbjGYVIo5GYq15Jzd4B6z5HJ-yPzHnCi2x-TxwwZ2tlu7s5L6L47RLmhSTbrhMeWO89G_vy1CBqXIZG7vI75ogQDGDNEsCylV2fVs26YiAZI7WbDHb8ZUx1Pa-Dwt_RsnqU06uxF0sSDGOpNiP1LB30mhduteyjD7voPGpfDW6WUyG0Ypm5Mq02OHO2cX_YqEv_cmIkx6NZadjWP8vR1W9pGI8jK5kkkTUt4M312TYvhQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_secret",
+						"value": "Tp~7Q~IDtB2fLnEc6GuB9eKCfmsh2AzhJJtE7",
+						"type": "text"
+					},
+					{
+						"key": "scope",
+						"value": "api://regular174/.default",
+						"type": "text"
+					},
+					{
+						"key": "client_id",
+						"value": "52f6b638-1c97-44a6-a217-1004ff0fd907",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"displayName\": \"regular155\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://myown-app.us-e2.cloudhub.io/api/new-resource",
+					"protocol": "http",
+					"host": [
+						"myown-app",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"api",
+						"new-resource"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addresourceURI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6ImNMRlJTaFpBeWNfVU05NEYxZWZUTTBlZGhiMHdJRXlWc3lTelhRTjA4MEEiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWF0IjoxNjM2NDcxMzgyLCJuYmYiOjE2MzY0NzEzODIsImV4cCI6MTYzNjQ3NTI4MiwiYWlvIjoiRTJaZ1lMalI4cjV6ZWRSMHRxUkErWFdIV2QrZkJnQT0iLCJhcHBfZGlzcGxheW5hbWUiOiJhcHAxIiwiYXBwaWQiOiI5ZTRiMDVlMS1kMDg5LTQ2OWMtODNiZC1kZjA2MDRhMzUzZDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJmZTRkMmIzZi04YTQzLTRlNmUtOGVhZS04Mjc1NWViNjk2NGIiLCJyaCI6IjAuQVF3QXNheURvS2FyTEVlSEFkajZKem5fUU9FRlM1NkowSnhHZzczZkJnU2pVOUFNQUFBLiIsInJvbGVzIjpbIkFwcGxpY2F0aW9uLlJlYWRXcml0ZS5Pd25lZEJ5IiwiQXBwbGljYXRpb24uUmVhZFdyaXRlLkFsbCIsIkRpcmVjdG9yeS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImZlNGQyYjNmLThhNDMtNGU2ZS04ZWFlLTgyNzU1ZWI2OTY0YiIsInRlbmFudF9yZWdpb25fc2NvcGUiOiJFVSIsInRpZCI6ImEwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MCIsInV0aSI6IkdGYXVjS19oTlVHOVR2VTdSeHc4QUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjA5OTdhMWQwLTBkMWQtNGFjYi1iNDA4LWQ1Y2E3MzEyMWU5MCJdLCJ4bXNfdGNkdCI6MTQwODEzMjgwOH0.iVXKrw9Cx9bCR0U5BcAe-DHIcpMBosifncjLzTSQlZ3k_XGBCsYWmgyb_1dz8x-k1xQf4d7su_oIQ4hlqxg5xXotI1EQqntmenD0jEuLBcIIBBIoNnbTmfVE3r8-CPR6hxwjHY3LRqmORf764f8VC-an87DK_kwS5BbiNJYijT0u6Tk2b5RGaVy_rqdd0TCM24JgETw75Xhd5V_1xtjLLE3RkQrZ5kd3avl6feErVTsSrTb1siS-2YP-cl-BVVM4cbzGr-KXmEd4qdOWSoCSUXz6ze0egW0eFp0kIdCXGIU8Dn7sAFgZ3h7wIf1IB4Im05crOHFkNdtYRhJPGUkDmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJhcGk6Ly85ZTRiMDVlMS1kMDg5LTQ2OWMtODNiZC1kZjA2MDRhMzUzZDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMDgzYWNiMS1hYmE2LTQ3MmMtODcwMS1kOGZhMjczOWZmNDAvIiwiaWF0IjoxNjM0NTc5NjgwLCJuYmYiOjE2MzQ1Nzk2ODAsImV4cCI6MTYzNDU4MzU4MCwiYWlvIjoiRTJaZ1lBaVdYbmZUOWFBRjY1WHZ2MjlNM1RVbEJnQT0iLCJhcHBpZCI6IjllNGIwNWUxLWQwODktNDY5Yy04M2JkLWRmMDYwNGEzNTNkMCIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2EwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MC8iLCJvaWQiOiJmZTRkMmIzZi04YTQzLTRlNmUtOGVhZS04Mjc1NWViNjk2NGIiLCJyaCI6IjAuQVF3QXNheURvS2FyTEVlSEFkajZKem5fUU9FRlM1NkowSnhHZzczZkJnU2pVOUFNQUFBLiIsInN1YiI6ImZlNGQyYjNmLThhNDMtNGU2ZS04ZWFlLTgyNzU1ZWI2OTY0YiIsInRpZCI6ImEwODNhY2IxLWFiYTYtNDcyYy04NzAxLWQ4ZmEyNzM5ZmY0MCIsInV0aSI6Inl2NTRjcVdpYVVxN3NINFQ3Y0s0QUEiLCJ2ZXIiOiIxLjAifQ.eq79Dp_yqaQ8Cr726_k2zPveP2njBVApL50ZddIZUv6ry9EXuQIzw4yPs-7qzEqdpTefz7SprhMkWiLuxRfWCBaVD5H5vsy2DAe4klh2g_G5wzJgDlxvuT_DpoZNicX_42oLvevQL83jp1l2i-wAfJUpmLv1z_FTqFfxwa8CGonKxkx2uRdi_BuHWFMg4ST5puQAZKINTGAXbuR0kuOLZ4OWfxR_8MKzkANU7dMfSgAbzAM0qwhRGZMfmJSCXkR-mos4sKjIR2Xl9v0juva7zwYTOEwv6dcChRvcQRvNMyDfCKeXkjFA9Ieay9habLtRpBBgHIWYciNLp_8MpC4Tpg",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "scope",
+						"value": "api://9e4b05e1-d089-469c-83bd-df0604a353d0/.default",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifierUris\": [\r\n        \"api://maddy3\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/applications/09d44700-2d5c-4e41-ba94-56b242dd5aca",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"applications",
+						"09d44700-2d5c-4e41-ba94-56b242dd5aca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apiToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Prefer",
+						"value": "outlook.body-content-type=text",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "scope",
+							"value": "api://regular174/.default",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "Tp~7Q~IDtB2fLnEc6GuB9eKCfmsh2AzhJJtE7",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "52f6b638-1c97-44a6-a217-1004ff0fd907",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/a083acb1-aba6-472c-8701-d8fa2739ff40/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"a083acb1-aba6-472c-8701-d8fa2739ff40",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
